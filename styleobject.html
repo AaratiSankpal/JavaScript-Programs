@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Style</title>
+</head>
+<body>
+
+    <p class="data">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione.</p>
+    <p class="data">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione.</p>
+    <p class="data">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione.</p>
+    <p class="data">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione.</p>
+    <p class="data">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione.</p>
+    <script>
+       //let element=document.getElementsByClassName('data');
+
+    //let element1=element[4].style.backgroundColor='red';    //style method for single property 
+
+    let element=document.getElementsByClassName('data');
+    let element1=element[4].style.cssText="color:red;background-color:yellow;border:6px solid green;font-size:40px";
+    </script>
+</body>
+</html>

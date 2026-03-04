@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+</head>
+<body>
+    <script>
+
+//         function user1(){ // after prameter
+//             console.log('this is js funcation..');
+
+//         }
+//         user1();//function declaretion/function statment/defination
+// // //later argument
+
+// function demo(a,b){
+//     console.log(a+b);
+// }
+// demo(2,2);
+
+
+// // //or
+
+// function demo(a,b){
+//     let mul=a*b
+//     console.log(mul);
+// }
+// demo(2,3); //function expression
+
+// (function (){
+//     let a=3;
+//     let b=4;
+//     console.log(a+b);
+// })()  //iife
+
+// //arrow function
+        //( for single method)
+
+// let hello=(num1,num2)=>{
+//     return num1-num2;
+//     }
+//     console.log(hello(4,5));//using returen
+
+//     //or for singlemethod
+    
+//     let user=(m,p)=>m+p;
+//     console.log(user(3,11)); //direct declare without return  //arrow function
+
+  //array function
+
+     let arr=[1,2,3,4,5,6,7,8,9];
+    // let arr1=arr.map((val)=>val+5);
+    // console.log(arr);
+    // console.log(arr1);//map function(crete new arry appling by new provided function means crete new are using the old and like5+1,5+2,5+3 )
+
+    // let arr2=arr.filter((item)=>item<8)
+    //     console.log(arr);
+
+    //     console.log(arr2); // filter method(check condition)
+
+
+        // let arr3=arr.reduce((prev,curr)=> curr=prev*curr);
+        // console.log(arr);
+        // console.log(arr3); //reduce methods(add current and privious numbers)
+
+    //function methods
+
+    // let arr4=['abc',5,false,null,123];
+    // let arr5=['abd',100,200];
+    // let demo4=arr4.concat.apply(arr4,arr5);
+    // console.log(demo4); //apply method(add to array)
+
+//     let obj={
+//        name:'vira',
+//       grade:80,
+//        result:function(){
+
+//            console.log('my name is '+ this.name+ ' I got'+ this.grade + ' % in the exam.');
+//        }
+//     }
+
+//  let obj1={
+//        name:'jiya',
+//   grade:90,
+
+//    }
+//     let hello=obj.result.bind(obj1);
+//     hello();
+
+
+        function demo(id,name){
+            this.id=id;
+            this.name=name;
+        }
+        function demo1(id,name){
+            demo.call(this,id,name)
+        }
+        function demo2(id,name){
+            demo.call(this,id,name)
+        }
+        let hello=new demo1(1,'avni');
+        let hello1=new demo1(2,'riya');
+        console.log(hello.id+" "+hello.name);
+        console.log(hello1.id+" "+hello.name);
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+</body>
+</html>
