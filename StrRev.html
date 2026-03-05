@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Reverse</title>
+</head>
+<body>
+
+<h2>Reverse String (Space replaced with -)</h2>
+<p id="result"></p>
+
+<script>
+let str = "Hello World Example";
+let reversed = "";
+
+for (let i = str.length - 1; i >= 0; i--) {
+    if (str[i] === " ") {
+        reversed += "-";
+    } else {
+        reversed += str[i];
+    }
+}
+
+document.getElementById("result").innerHTML = reversed;
+</script>
+
+</body>
+</html>
